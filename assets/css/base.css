@@ -27,16 +27,11 @@ body{
     width: 100%;
     max-width: 128rem;
     margin: 0 auto;
+    padding: 0rem 1.5rem;
 }
-.container.lg{
-    max-width: 153.6rem;
-}
-.container.wrapper{
-    max-width: 112rem;
-   
-}
+
 @media (min-width:2000px) {
-    .container.wrapper{
+    .container{
         min-width: 196.8rem;
        padding-left: 9.6rem;
        padding-right: 9.6rem;

@@ -14,10 +14,37 @@
         <header class="header">
             <div class="container">
                 <div class="header-content px-14 d-flex align-center justify-content-between">
+                   
                     <div class="header-logo">
+                        <div class="header_nav-mobile  hidden-on-tablet-pc hidden-on-pc">
+                            <div class="nav-mobile-menu tab-mobile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 1.46957 0.210714 0.96086 0.585786 0.585787C0.960859 0.210714 1.46957 0 2 0H26C26.5304 0 27.0391 0.210714 27.4142 0.585787C27.7893 0.96086 28 1.46957 28 2C28 2.53043 27.7893 3.03914 27.4142 3.41421C27.0391 3.78929 26.5304 4 26 4H2C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2ZM0 12C0 11.4696 0.210714 10.9609 0.585786 10.5858C0.960859 10.2107 1.46957 10 2 10H26C26.5304 10 27.0391 10.2107 27.4142 10.5858C27.7893 10.9609 28 11.4696 28 12C28 12.5304 27.7893 13.0391 27.4142 13.4142C27.0391 13.7893 26.5304 14 26 14H2C1.46957 14 0.960859 13.7893 0.585786 13.4142C0.210714 13.0391 0 12.5304 0 12ZM0 22C0 21.4696 0.210714 20.9609 0.585786 20.5858C0.960859 20.2107 1.46957 20 2 20H14C14.5304 20 15.0391 20.2107 15.4142 20.5858C15.7893 20.9609 16 21.4696 16 22C16 22.5304 15.7893 23.0391 15.4142 23.4142C15.0391 23.7893 14.5304 24 14 24H2C1.46957 24 0.960859 23.7893 0.585786 23.4142C0.210714 23.0391 0 22.5304 0 22Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="mobile-menu-wraper menu-tab">
+                                <div class="overlay menu-mobile-overlay"></div>
+                                <div class="mobile-menu-content">
+                                    <ul class="header_nav ">
+                                        <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">Home</a></li>
+                                        <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">Shop</a></li>
+                                        <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">Categories</a>
+                                            <span class="header_icon">
+                                                <img src="./assets/images/Vectordown.svg" alt="">
+                                            </span>
+                                        </li>
+                                        <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">About us</a></li>
+                                        <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">Contact us</a></li>
+                                    </ul>
+                                    <div class="rm-menu removeTab">
+                                        <img src="./assets/images/x.svg" alt="" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <img src="./assets/images/logo.png" alt="">
                     </div>
-                    <ul class="header_nav d-flex">
+                    <ul class="header_nav d-flex hidden-on-tablet">
                         <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">Home</a></li>
                         <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">Shop</a></li>
                         <li class="nav_item  mr-24 text-bold"><a href="#"  class="nav_link">Categories</a>
@@ -45,13 +72,15 @@
         <div class="main"></div>
         <div class="footer"></div>
     </div>
-
+    <script  src="./assets/javaScript/library/aos/aos.js"></script>
+    <script  src="./assets/javaScript/library/swiper/swiper.min.js"></script>
+    
+    <script src="./assets/javaScript/index.js"  type="module"></script>
+    <script src="./assets/javaScript/library/jquery/jquery.min.js" type="text/javascript"></script>
+    
+    <script src="./assets/javaScript/library/countUp-js/jquery.countup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 </body>
 
-<script class="./assets/javaScript/library/aos/aos.js"></script>
-<script class="./assets/javaScript/library/jquery/jquery.min.js"></script>
-<script class="./assets/javaScript/library/countUp-js/jquery.countup.js"></script>
-<script class="./assets/javaScript/library/countUp-js/jquery.countup.min.js"></script>
-<script class="./assets/javaScript/library/swiper/swiper.min.js"></script>
-<script src="./assets/javaScript/index.js" type="module" ></script>
+
 </html>
