@@ -1,5 +1,6 @@
 export default function tabMobileModule(){
     const tabMobile = document.querySelector('.tab-mobile')
+ 
   
     if(tabMobile)
     {

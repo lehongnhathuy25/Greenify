@@ -1,0 +1,108 @@
+@import './valiable.scss';
+.header{
+    &_user{
+        width: 2.4rem;
+        height: 2.4rem;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 2.4rem;
+
+        }
+    }
+    
+    .nav_item:hover .nav_link::after{
+        width: 100%;
+    }
+    .nav_link{
+        position: relative;
+        color: $black-primary;
+        &::after{
+            content:"";
+            position: absolute;
+            height: .2rem;
+            width: 0;
+            background-color: $green-primary;
+            left: 0;
+            bottom: -.6rem;
+            transition: ease-in .2s;
+            
+    }   
+    }
+    &_cart-num{
+        top: 0;
+        right: -.6rem;
+        font-size: .7rem;
+        color: $white-primary;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: $red-primary;
+       
+    }
+}
+@media  (min-width:1280px){
+    .hidden-on-pc{
+        display: none;
+    }
+}
+@media (min-width: 769px) and (max-width:1280px){
+    .hidden-on-tablet-pc{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .hidden-on-tablet{
+        display: none !important;
+    }
+    .header{
+        &-logo{
+            display: flex;
+            align-items: center;
+        }
+        &_nav-mobile{
+            margin-right: 2rem;
+        }
+    }
+    .mobile-menu-wraper{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+    }
+    .mobile-menu-content{
+        
+        width: 60%;
+        height: 100%;
+        background-color: $white-primary;
+         position: relative;
+        padding: 4rem;
+    }
+    .menu-tab{
+    transform: translateX(-100%);
+    transition: ease .4s;
+    } 
+    .menu-tab.open{
+        transform: translateX(0);
+        transition: ease .4s;
+        }
+    .nav_item{
+        margin-bottom: 2rem;
+    }
+    .rm-menu{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
